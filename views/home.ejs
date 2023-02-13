@@ -1,0 +1,23 @@
+<%- include("partials/header") -%>
+
+
+<% for(var i=0;i<listTitle.length;i++){ %>
+<ul class="blog no-bullets">
+    <li>
+        <h1><%= listTitle[i] %></h1>
+    </li>
+    <h2><%= newDay %></h2>
+    <p class="para"><%= postBlog[i].substring(0,100) + "..." %></p>
+    <a href="/post/<%= listTitle[i] %>" + listTitle[i] class="toPost">read more</a>
+    <hr>
+</ul>
+<% } %>
+
+
+
+
+
+
+
+
+<%- include("partials/footer") -%>

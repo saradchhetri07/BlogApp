@@ -1,0 +1,15 @@
+/* .footer {
+  height: 100px;
+  font-family: Montserrat;
+} */
+footer {
+  margin-top: 100px;
+  position: fixed;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  text-align: center;
+  font-family: Montserrat;
+}
