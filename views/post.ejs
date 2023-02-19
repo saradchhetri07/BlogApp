@@ -3,10 +3,19 @@
     <li>
         <h1><%= listTitle %></h1>
     </li>
-    <h2 style="font-family: Montserrat;"><%= newDay %></h2>
+    <h2><%= newDay %></h2>
     <p><%= postBlog %> </p>
-    <hr>
-</ul>
-</body>
+    <form action="/delete" method="post">
+        <div style="margin-left:50%">
+            <input type="hidden" name="item" value="<%= foundBlogs._id %>">
+            <button type="submit" class="btn btn-primary btn-block btn-lg mb-4 btn-dark" name="button"
+                name=listTitle>Delete</button>
+        </div>
+    </form>
 
-</html>
+    <hr>
+
+
+</ul>
+
+<%- include("partials/footer") %>
